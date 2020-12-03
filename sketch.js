@@ -8,11 +8,7 @@ function preload(){
 }
 function setup() { 
   createCanvas(1600,400);
-  gun = createSprite(130,250);
-  gun.addImage('gun',gunImg);
-  //gun.setCollider('rectangle',-100,100,0,0);
-  //gun.debug= true;
-  gun.rotateToDirection = true;
+  
   speed = random(223,321);
   weight =  random(30,52);
   thickness = random(22,83);
@@ -22,6 +18,11 @@ function setup() {
   wall.shapeColor = color(80,80,80);
   bullet = createSprite(50,200,50,20);
   bullet.velocityX = speed;
+  bullet.shapeColor = 'white';
+
+  gun = createSprite(130,250);
+  gun.addImage('gun',gunImg);
+  gun.rotateToDirection = true;
  
  
 }
