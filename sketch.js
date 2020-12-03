@@ -67,7 +67,7 @@ if(touch(bullet,wall)){
 
      
     }
-    if(keyDown('r')){
+    if(keyWentDown('r')){
       a = 1;
       gunAnimation()
       damage = 0;
